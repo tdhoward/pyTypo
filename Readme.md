@@ -5,16 +5,16 @@ pyTypo 0.1 is a prank typo program written in Python.  It only works under Windo
   * Missing letters  (e.g. "Please join me for luch")          15%
   * Extra letters (nearby)  (e.g. "Please join me for lunmch") 15%
  
-Settings within the Python script can control when the typos are triggered, with the default settings as follows:
+Settings within the Python script control when the typos are triggered, with the default settings as follows:
 ```python
-time_threshold = 125  # trigger based on fast typing (delays of less than 125ms)
-random_percentage = 30  # Don't mess with _every_ letter, only about 30% of the time.
+time_threshold = 125  # trigger based on fast typing (delays of less than 125ms between characters)
+random_percentage = 30  # Don't typo _every_ time we trigger, only about 30% of the time.
 resume_timeout = 17000  # After a typo, wait 17 seconds before allowing another one.
 ```
 
 # Requirements
 ## [Python 3.6 for Windows](https://www.python.org/ftp/python/3.6.7/python-3.6.7.exe)
-Although Python 3.6.7 is referenced by the installation script, you can modify it as needed.  Typically, a silent installation can be triggered as follows:
+Although Python 3.6.7 is referenced by the installation script, you can modify the version as needed.  Typically, a silent installation can be triggered as follows:
 `python-3.6.7.exe /quiet InstallAllUsers=1 Shortcuts=0 Include_tcltk=0 PrependPath=1`
 This will install into `%ProgramFiles(x86)%\Python36-32`
 
@@ -39,5 +39,5 @@ Download Python 3.6 (32 bit) from the link above, then copy the contents of the 
 
 
 # More information
-Average typing speed is between 38-40 WPM  (or 190 - 200 characters per minute).  This translates to an average of 300ms between characters, but the maximum speed varies greatly.  Average accuracy is 8 typos for every 100 words typed, or about 3.2 typos per minute on average.
+Average typing speed is between 38-40 WPM  (or 190 - 200 characters per minute).  This translates to an average of 300ms between characters, but the maximum speed varies greatly.  Average normal accuracy is 8 typos for every 100 words typed, or about 3.2 typos per minute on average.
 
